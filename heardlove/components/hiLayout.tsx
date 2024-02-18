@@ -27,6 +27,15 @@ export default function HiLayout () {
                 </div>
                 <button className="btn-discover">KHÁM PHÁ NGAY</button>
             </div>
+
+            <div className="acessesory">
+                <div className="list-gift">
+                    <div className="gif1">
+                        <img src="" alt="" />
+                    </div>
+                    <div className="gif2"></div>
+                </div>
+            </div>
         </div>
     )
 }
