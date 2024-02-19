@@ -1,0 +1,40 @@
+#universe {
+    left:0;
+    top:0;
+	position: fixed;
+	width: 100%;
+	height: 1000px;
+	overflow: hidden;
+    z-index: -1000;
+}
+
+.star0 {
+    height: 1px;
+    width: 1px;
+    opacity: 1;
+    position: absolute;
+}
+
+.star1 {
+height: 2px;
+width: 2px;
+border-radius: 50%;
+opacity: 1;
+position: absolute;
+}
+  
+.star2 {
+height: 3px;
+width: 3px;
+border-radius: 50%;
+opacity: 1;
+position: absolute;
+}
+
+.star3 {
+height: 4px;
+width: 4px;
+border-radius: 50%;
+opacity: 1;
+position: absolute;
+}

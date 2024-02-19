@@ -1,0 +1,102 @@
+.planet {
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.item-planet {
+    width:1000px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-item {
+    display: flex;
+    align-items: center;
+    margin-top:50px;
+}
+
+.head-item button{
+    font-size:50px;
+    font-weight: 800;
+}
+
+.image-item {
+    width:300px;
+    height:300px;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.image-item img{
+    animation: scale 1.5s linear;
+}
+
+.mars {
+    margin-top:-42px;
+}
+
+.mercury {
+    margin-top:20px;
+}
+
+.container-item {
+    margin-top:50px;
+}
+
+.title-planet {
+    font-size:30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: rgb(253, 253, 253) 5px 0 20px;
+    animation: scale 1.5s linear;
+}
+
+.note-planet {
+
+    width:500px;
+    font-size:25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top:30px;
+}
+
+.description-planet {
+    height:70px;
+    font-size:20px;
+    margin-top:15px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    animation: scale 2s linear
+}
+
+.mean-planet {
+    height:100px;
+    margin-top:10px;
+    font-size:15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.btn-travel {
+    margin-top:50px;
+    font-size:17px;
+    font-weight: 600;
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+    background-color: rgb(175, 138, 18);
+}
+
+/* ANIMATION */
+
+@keyframes scale {
+    0% {opacity:0}
+    25% {opacity:0.25}
+    50% {opacity:0.5}
+    75% {opacity:0.75}
+    100% {opacity:1}
+}

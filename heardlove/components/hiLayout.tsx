@@ -1,7 +1,12 @@
 'use client'
 import React from "react";
 import "../stylesheet/hiComponent.css";
+import Link from "next/link";
+import TextType from "@/functions/texttype";
+
 export default function HiLayout () {
+    const textDes = "Em bé đã sẵn sàng chưa nè. Nếu sẵn sàng rồi thì bắt đầu khám phá vũ trụ này thôi. Chúc bé khám phá vũ trụ này vui vẻ nhoa :3";
+
     return (
         <div className="hi-layout">
             <div className="text-head">
@@ -23,18 +28,13 @@ export default function HiLayout () {
             </div>
             <div className="layout-continue">
                 <div className="text-description">
-                    Em bé đã sẵn sàng chưa nè. Nếu sẵn sàng rồi thì bắt đầu khám phá vũ trụ này thôi. Chúc bé khám phá vũ trụ này vui vẻ nhoa :3
+                    <TextType text={textDes} />
                 </div>
-                <button className="btn-discover">KHÁM PHÁ NGAY</button>
-            </div>
-
-            <div className="acessesory">
-                <div className="list-gift">
-                    <div className="gif1">
-                        <img src="" alt="" />
-                    </div>
-                    <div className="gif2"></div>
-                </div>
+                <button className="btn-discover">
+                    <Link href={"./kham-pha"}>
+                        KHÁM PHÁ NGAY
+                    </Link>
+                </button>
             </div>
         </div>
     )

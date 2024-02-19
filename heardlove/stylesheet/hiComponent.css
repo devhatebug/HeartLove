@@ -127,6 +127,7 @@ ul {
 }
 
 .text-description {
+    height:70px;
     font-size:18px;
     font-weight: 400;
     width: 700px;
