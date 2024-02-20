@@ -91,6 +91,51 @@
     background-color: rgb(175, 138, 18);
 }
 
+.planet-item {
+    width:100%;
+    min-height:100vh;
+    top:0;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-planet {
+    width: 85%;
+    min-height: 90vh;
+    border-radius: 15px;
+    background-color:rgb(2, 1, 32);
+    box-shadow: rgba(98, 176, 255, 0.336) 0px 0px 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.btn-change {
+    display: flex;
+    align-items: center;
+    width:auto;
+    height:auto;
+    padding:20px;
+    float:right;
+}
+
+.btn-change button{
+    width: auto;
+    padding:5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(71, 71, 71, 0.555);
+    font-size: 15px;
+    font-weight: 600;
+    margin-right:10px;
+}
+
 /* ANIMATION */
 
 @keyframes scale {

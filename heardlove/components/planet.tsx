@@ -31,6 +31,32 @@ const Planet = () => {
         order === 3 && setClassName("venus");
     }, [order]);
 
+    // show popup item planet
+    const [isOpen, setIsOpen] = useState(false);
+    const [sm, setSm] = useState(false);
+    const [sh, setSh] = useState(false);
+    const [st, setSt] = useState(false);
+    const [sk, setSk] = useState(false);
+    const handleOpenPopup = () => {
+        setTimeout(() => {
+            setIsOpen(true);
+        },1)
+        order === 0 && setSm(true);
+        order === 1 && setSh(true);
+        order === 2 && setSt(true);
+        order === 3 && setSk(true);
+    }
+
+    const handleClosePopup = () => {
+        setTimeout(() => {
+            setIsOpen(false);
+        },1);
+        setSm(false);
+        setSh(false);
+        setSt(false);
+        setSk(false);
+    }
+
     return (
         <div className="planet">
             {data.map((dt,id) => {
@@ -60,16 +86,61 @@ const Planet = () => {
                                     <TextType text={dt.mean}/>
                                 </div>
                             </div>
-                            <button className="btn-travel">
-                                <Link href={"./" + dt.name.replace(/[^a-zA-Z]/g,'' ).toLowerCase()}>
+                            <button onClick={handleOpenPopup} className="btn-travel">
                                     Xem hành tinh
-                                </Link>
                             </button>
                         </div>
                     )
                 }
             })}
-           
+           {sm && (
+                <div className="memory-planet planet-item">
+                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                        <div className="btn-change">
+                            <button className="btn-gohome">
+                                <Link href="./">Home</Link>
+                            </button>
+                            <button onClick={handleClosePopup} className="btn-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+           )}
+           {sh && (
+                <div className="mars-planet planet-item">
+                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                        <div className="btn-change">
+                            <button className="btn-gohome">
+                                <Link href="./">Home</Link>
+                            </button>
+                            <button onClick={handleClosePopup} className="btn-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+           )}
+           {st && (
+                <div className="mercury-planet planet-item">
+                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                        <div className="btn-change">
+                            <button className="btn-gohome">
+                                <Link href="./">Home</Link>
+                            </button>
+                            <button onClick={handleClosePopup} className="btn-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+           )}
+           {sk && (
+                <div className="venus-planet planet-item">
+                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                        <div className="btn-change">
+                            <button className="btn-gohome">
+                                <Link href="./">Home</Link>
+                            </button>
+                            <button onClick={handleClosePopup} className="btn-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+           )}
         </div>
     )
 };
