@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "name" : "Lần đầu tiên gặp nhau",
+        "description" : "Lần đầu tiên chúng ta gặp nhau là ở trong game. Duyên trời cho anh gặp được một em bé siu siu cute luôn ý. Và từ ngày hôm đó, anh đã tương tư em rất rất nhiều.",
+        "time": "16/11/2023",
+        "location" : "Bình nguyên vô tận"
+    },
+    {
+        "id" : 2,
+        "name" : "Add facebook nhau",
+        "description" : "Sau hơn 1 tuần thì cuối cùng công chúa của anh cũng chịu add facebook anh. Lúc ý vui quá trời lun ý. Từ lúc đó anh đã không phải chờ em bé onl trong game nữa rùi",
+        "time": "24/11/2023",
+        "location" : "Facebook"
+    },
+    {
+        "id" : 3,
+        "name" : "Date lần đầu tiên",
+        "description" : "Sau gần 1 tháng thì tụi mình cũng gặp nhau bên ngoài. Đây cũng là nơi anh chính thức tỏ tình và đeo nhẫn đôi cho em bé đóa. Không chỉ vậy, đây cũng là lần đầu hun nhau của cả 2 lun. Siu siu thích :3. Sau lần hẹn hò đầu tiên này, mình đã gặp nhau siu siu nhiều luôn ý. Và mỗi lần gặp nhau thật sự anh cảm thấy rất là hạnh phúc luôn.",
+        "time": "23/12/2023",
+        "location" : "Hồ Tiên Sa"
+    }, 
+    {
+        "id" : 4,
+        "name" : "Giận nhau nhiều nhất",
+        "description" : "Có lẽ khoảng thời gian mà mình giận nhau siu siu nhiều đóa là tuần trước tết nguyên đán cho đến trong tết luôn. Không hiểu sao lúc đó anh lại hay trẻ con giận dỗi làm em bé khó chịu lắm lun. Nhưng sau đó thì mình đã hiểu nhau hơn phần nào và ít hơn rồi nè. Cảm ơn bé vì đã ở lại với anh <3",
+        "time" : "04->13/02/2024",
+        "location" : "Facebook"
+    },
+    {
+        "id" : 5,
+        "name" : "Lần đầu dẫ bé đi chơi xa một xíu",
+        "description" : "Đây là lần đầu tiên anh đưa em bé qua chỗ anh chơi nè. Một buổi đi chơi anh cảm thấy rất là vui luôn. Mặc dù trong quá trình đi chơi anh có hơi quá đáng làm em bé suýt khóc lun :((. Thương bé nhiều lắm nên không được khóc nữa đâu đó nha <3",
+        "time" : "18/02/2024",
+        "location" : "DNA Coffe Box - Nội thành Hà Nội"
+    }
+]

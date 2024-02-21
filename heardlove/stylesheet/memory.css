@@ -1,0 +1,113 @@
+.head-planet {
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+}
+.name-planet {
+    font-size:30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: rgb(253, 253, 253) 5px 0 20px;
+    animation: scale 1.5s linear;
+}
+.sub-title {
+    display: flex;
+    align-items: center;
+    font-size:18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top:10px;
+}
+.sub-title span {
+    width:100px;
+    height:1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-right:20px;
+    margin-left: 20px;
+}
+.explain-planet {
+    width:700px;
+    height:auto;
+    text-align: center;
+    margin:0 auto;
+    margin-top:50px;
+    padding:10px 15px 10px 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:  rgba(1, 204, 220, 0.16);
+    color:#03d0ff;
+    text-shadow: 2px 1px #00040a;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
+                Roboto,"Helvetica Neue",Arial,sans-serif,
+                "Apple Color Emoji","Segoe UI Emoji",
+                "Segoe UI Symbol","Noto Color Emoji"
+}
+.time-line-planet {
+    width:900px;
+    height:400px;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding-right:40px;
+    padding-left:20px;
+}
+::-webkit-scrollbar {
+    width: 1px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(4, 2, 70);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: #ffffff2f; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }
+.item-timeline {
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+}
+.line-pattern {
+    width:2px;
+    height:100px;
+    background-color: #ffffff62;
+    margin-right:20px;
+    border-radius:20px;
+}
+.time-location {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fdfdfdb0;
+}
+.name-timeline {
+    font-size:22px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 2;
+}
+.description-timeline {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #ffffffc2;
+}

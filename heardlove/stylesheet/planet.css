@@ -111,9 +111,10 @@
     box-shadow: rgba(98, 176, 255, 0.336) 0px 0px 20px;
     opacity: 0;
     transition: opacity 1s;
+    overflow-y: auto;
 }
 
-.visible {
+.appear {
     opacity: 1;
 }
 

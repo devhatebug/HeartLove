@@ -4,6 +4,7 @@ import Link from "next/link";
 import "@/stylesheet/planet.css";
 import URL_LINK from "@/database/planet.json";
 import TextType from "@/functions/texttype";
+import Memory from "@/layouts/memory";
 const Planet = () => {
     const data = URL_LINK;
     const [order, setOrder] = useState(0);
@@ -48,13 +49,13 @@ const Planet = () => {
     }
 
     const handleClosePopup = () => {
+        setIsOpen(false);
         setTimeout(() => {
-            setIsOpen(false);
-        },1);
-        setSm(false);
-        setSh(false);
-        setSt(false);
-        setSk(false);
+            setSm(false);
+            setSh(false);
+            setSt(false);
+            setSk(false);
+        }, 1);
     }
 
     return (
@@ -95,19 +96,20 @@ const Planet = () => {
             })}
            {sm && (
                 <div className="memory-planet planet-item">
-                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                    <div className={`container-planet ${isOpen ? 'appear' : ''}`}>
                         <div className="btn-change">
                             <button className="btn-gohome">
                                 <Link href="./">Home</Link>
                             </button>
                             <button onClick={handleClosePopup} className="btn-close">Close</button>
                         </div>
+                        <Memory />
                     </div>
                 </div>
            )}
            {sh && (
                 <div className="mars-planet planet-item">
-                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                    <div className={`container-planet ${isOpen ? 'appear' : ''}`}>
                         <div className="btn-change">
                             <button className="btn-gohome">
                                 <Link href="./">Home</Link>
@@ -119,7 +121,7 @@ const Planet = () => {
            )}
            {st && (
                 <div className="mercury-planet planet-item">
-                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                    <div className={`container-planet ${isOpen ? 'appear' : ''}`}>
                         <div className="btn-change">
                             <button className="btn-gohome">
                                 <Link href="./">Home</Link>
@@ -131,7 +133,7 @@ const Planet = () => {
            )}
            {sk && (
                 <div className="venus-planet planet-item">
-                    <div className={`container-planet ${isOpen ? 'visible' : ''}`}>
+                    <div className={`container-planet ${isOpen ? 'appear' : ''}`}>
                         <div className="btn-change">
                             <button className="btn-gohome">
                                 <Link href="./">Home</Link>
