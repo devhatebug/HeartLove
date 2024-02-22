@@ -1,0 +1,119 @@
+.pass-form {
+    width:700px;
+    height:auto;
+    padding-bottom:50px;
+    background-color: rgb(4, 16, 43);
+    border-radius: 10px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    animation: display 0.5s linear;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@keyframes display {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+.close-btn {
+    font-size:15px;
+    font-weight: 500;
+    padding:5px 10px 5px 10px;
+    background-color: rgba(71, 71, 71, 0.555);
+    border-radius:10px;
+    float:right;
+    margin-right:15px;
+    margin-top:15px;
+}
+.close-btn:hover{
+    opacity: 0.9;
+}
+.form-password {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:0 auto;
+    margin-top:100px;
+    margin-left:70px;
+}
+.form-password label{
+    font-size:18px;
+    font-weight: 500;
+}
+.pass-display{
+    font-weight: 800;
+    color: aquamarine;
+}
+.form-password input{
+    width:400px;
+    height:60px;
+    margin-top:30px;
+    border-radius:10px;
+    background-color: rgb(4, 16, 43);
+    border:0.5px solid white;
+    padding-left:20px;
+    color:white;
+    font-weight:500;
+}
+.err-pass {
+    font-size:15px;
+    margin-top:10px;
+    font-weight: 600;
+    color: rgb(238, 0, 0);
+}
+.terms{
+    margin-top:25px;
+}
+.terms-item{
+    display: flex;
+    align-items: center;
+    margin-top:15px;
+}
+.terms-item input{
+    display: none; 
+}
+.checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(4, 16, 43);
+    border: 0.5px solid white;
+    position: relative;
+    margin-right:15px;
+}
+input[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+.btn-accept {
+    padding:10px 20px 10px 20px;
+    background-color: rgb(0, 149, 207);
+    font-size: 18px;
+    font-weight: 600;
+    margin:0 auto;
+    margin-top:50px;
+    border-radius: 10px;
+}
+.btn-accept:hover{
+    opacity: 0.9;
+}
+.err2, .err3 {
+    margin-top:5px;
+    margin-left:35px;
+    font-weight: 900;
+    color: rgb(184, 4, 4);
+}

@@ -28,6 +28,11 @@
     margin-right: 15px;
     animation: shake 0.8s ease-in-out infinite;
 }
+.passform {
+    width:100vw;
+    position: relative;
+    background-color: rgba(15, 15, 15, 0.589);
+}
 
 @keyframes shake {
     0% { transform: translateX(-5px); } /* Độ lệch sang trái */
