@@ -50,11 +50,14 @@ const PassForm: React.FC<PassFormProps> = ({onClose}) => {
         valuePass !== "" && setErr1(false);
         !checkBoxAccept && !checkBoxReject && setErr3(true);
         if( checkBoxAccept || checkBoxReject) {setErr3(false);}
-        if (valuePass === "iuanhbap") {
+        if (valuePass === "iuanhbap" && checkBoxAccept) {
             alert("Hí Hí! Trôn Trôn Việt Nam. PassWord là ngày tháng năm sinh của em bé đóa :3");
         }
-        if (valuePass !== pass_word) {
+        if (valuePass !== pass_word || checkBoxAccept) {
             setErr4(true);
+        }
+        if(valuePass !== "" && checkBoxReject) {
+            alert("Cưới anh mới mở được quà :3");
         }
     };
     return (
