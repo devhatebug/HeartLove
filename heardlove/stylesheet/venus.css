@@ -1,0 +1,36 @@
+.text-planet {
+    width:80%;
+    height:400px;
+    margin:0 auto;
+    margin-top:50px;
+    font-size:18px;
+    letter-spacing: 1.5px;
+    line-height: 2;
+    text-shadow: #FC0 1px 0 10px;
+}
+.btn-gift {
+    width:auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: brown;
+    padding:10px 20px 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    margin:0 auto;
+    margin-top:50px;
+}
+.btn-gift:hover {
+    opacity: 0.9;
+}
+.btn-gift img{
+    width:30px;
+    margin-right: 15px;
+    animation: shake 0.8s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-5px); } /* Độ lệch sang trái */
+    50% { transform: translateX(5px); } /* Độ lệch sang phải */
+    100% { transform: translateX(-5px); } /* Quay lại vị trí ban đầu */
+  }

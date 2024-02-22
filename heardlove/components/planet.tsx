@@ -6,22 +6,23 @@ import URL_LINK from "@/database/planet.json";
 import TextType from "@/functions/texttype";
 import Memory from "@/layouts/memory";
 import Mars from "@/layouts/mars";
+import Venus from "@/layouts/venus";
 const Planet = () => {
     const data = URL_LINK;
     const [order, setOrder] = useState(0);
     const preOrder = () => {
-        if (order > 0 && order <= 3 ) {
+        if (order > 0 && order <= 2 ) {
             setOrder(order - 1)
         };
         if (order === 0) {
-            setOrder(3)
+            setOrder(2)
         }
     };
     const nextOrder = () => {
-        if (order >= 0 && order < 3) {
+        if (order >= 0 && order < 2) {
             setOrder(order + 1);
         }
-        if (order === 3) {
+        if (order === 2) {
             setOrder(0)
         }
     }
@@ -29,8 +30,7 @@ const Planet = () => {
     useEffect(() => {
         order === 0 && setClassName("jupiter");
         order === 1 && setClassName("mars");
-        order === 2 && setClassName("mercury");
-        order === 3 && setClassName("venus");
+        order === 2 && setClassName("venus");
     }, [order]);
 
     // show popup item planet
@@ -45,8 +45,7 @@ const Planet = () => {
         },1)
         order === 0 && setSm(true);
         order === 1 && setSh(true);
-        order === 2 && setSt(true);
-        order === 3 && setSk(true);
+        order === 2 && setSk(true);
     }
 
     const handleClosePopup = () => {
@@ -121,18 +120,6 @@ const Planet = () => {
                     </div>
                 </div>
            )}
-           {st && (
-                <div className="mercury-planet planet-item">
-                    <div className={`container-planet ${isOpen ? 'appear' : ''}`}>
-                        <div className="btn-change">
-                            <button className="btn-gohome">
-                                <Link href="./">Home</Link>
-                            </button>
-                            <button onClick={handleClosePopup} className="btn-close">Close</button>
-                        </div>
-                    </div>
-                </div>
-           )}
            {sk && (
                 <div className="venus-planet planet-item">
                     <div className={`container-planet ${isOpen ? 'appear' : ''}`}>
@@ -142,6 +129,7 @@ const Planet = () => {
                             </button>
                             <button onClick={handleClosePopup} className="btn-close">Close</button>
                         </div>
+                        <Venus />
                     </div>
                 </div>
            )}

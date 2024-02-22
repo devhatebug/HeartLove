@@ -16,14 +16,6 @@
         "mean" : "Sao Hỏa đã gây sự chú ý của con người với bề mặt đỏ rực và các đặc điểm địa hình độc đáo như dãy núi cao, thung lũng sâu, và cả các hố sâu. Sự khám phá của Sao Hỏa đã đưa ra nhiều câu hỏi về nguồn gốc và tính chất của hệ mặt trời của chúng ta, đồng thời kích thích trí tưởng tượng và tò mò về vũ trụ lớn"
     },
     {
-        "id" : 3,
-        "name" : "Baby  Planet",
-        "description" : "Hành tinh này là hành tinh dành riêng cho Bống đó. Đây chính là một hành tinh có những hình ảnh của Bống siu siu cute lunn đóa",
-        "image" : "./mercury.png",
-        "ne" : "Mercury - sao thủy",
-        "mean" : "Sao Thủy thường được coi là 'nữ thần của tình yêu và sắc đẹp' trong nhiều nền văn hóa khác nhau. Điều này xuất phát từ việc nó có bề mặt ánh sáng mịn màng, dễ thương, và bóng loáng như phản xạ ánh sáng từ Mặt Trời"
-    },
-    {
         "id" : 4,
         "name" : "Love  Planet",
         "description" : "Hành tinh này chứa đựng một tình iuuu siu siu to bự cho Bống nhoa. Ghé thăm nơi đây để biết tình yêu đóa như nào nha em bé <3",
