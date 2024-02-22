@@ -5,6 +5,7 @@ import "@/stylesheet/planet.css";
 import URL_LINK from "@/database/planet.json";
 import TextType from "@/functions/texttype";
 import Memory from "@/layouts/memory";
+import Mars from "@/layouts/mars";
 const Planet = () => {
     const data = URL_LINK;
     const [order, setOrder] = useState(0);
@@ -116,6 +117,7 @@ const Planet = () => {
                             </button>
                             <button onClick={handleClosePopup} className="btn-close">Close</button>
                         </div>
+                        <Mars />
                     </div>
                 </div>
            )}
