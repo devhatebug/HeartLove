@@ -85,7 +85,7 @@ const PassForm: React.FC<PassFormProps> = ({onClose}) => {
                 <button onClick={handleSubmit} className="btn-accept">
                     {unLock ? 
                         (
-                            <a href="./">Đồng ý</a>
+                            <a href="./heart">Đồng ý</a>
                         ) : 
                         "Đồng ý"
                    }
