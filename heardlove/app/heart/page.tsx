@@ -1,7 +1,7 @@
 'use client';
 import "../heart/heart.css";
 import { useEffect, useRef } from 'react';
-
+import TextType from "@/functions/texttype";
 const HeartPage = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -239,7 +239,9 @@ const HeartPage = () => {
   return (
     <div className="box">
         <canvas ref={canvasRef} id="pinkboard"></canvas>
-        <div className="text-love">Nguyen Thu Phuong</div>
+        <div className="text-love">
+            <TextType text={"NGUYEN THU PHUONG"}/>
+        </div>
     </div>
   );
 };
